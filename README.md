@@ -16,7 +16,7 @@ The repository includes the complete software pipeline developed throughout the 
 The main objectives of this work were to:
 
 * Design and conduct a human-subject experimental study in immersive virtual reality.
-* Acquire synchronized EEG, ECG and respiration signals during VR exposure.
+* Acquire synchronized EEG, ECG and EMG signals during VR exposure.
 * Develop a robust preprocessing and feature extraction pipeline for multimodal physiological data.
 * Train and validate machine learning models capable of estimating fear-related states.
 * Integrate the trained classifier into a real-time neuroadaptive framework.
@@ -52,8 +52,7 @@ The implemented pipeline consists of the following stages:
 2. **Data Acquisition**
 
    * 32-channel EEG recording
-   * ECG acquisition
-   * Respiration monitoring
+   * ECG and EMG acquisition
    * Synchronization through Lab Streaming Layer (LSL)
 
 3. **Offline Analysis**
