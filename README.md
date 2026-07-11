@@ -36,6 +36,17 @@ The main objectives of this work were to:
 ├── requirements.txt
 └── README.md
 ```
+---
+
+## Requirements
+
+The project was developed and tested using **Python 3.14.3**. It is expected to be compatible with recent Python 3 versions (3.11+), although compatibility with earlier releases has not been tested.
+
+Install the required dependencies with:
+
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
