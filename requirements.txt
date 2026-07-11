@@ -1,0 +1,10 @@
+# Core dependencies for the neuroadaptive VR project
+
+numpy>=2.0
+scipy>=1.13
+matplotlib>=3.9
+mne>=1.8
+pylsl>=1.17
+pyxdf>=1.17
+scikit-learn>=1.5
+joblib>=1.4
