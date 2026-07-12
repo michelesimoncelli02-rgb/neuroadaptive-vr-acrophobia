@@ -29,6 +29,7 @@ Project Structure
 
 The repository is organised to separate raw experimental data, source code, and documentation.
 
+```text
 project/
 │
 ├── data/
@@ -60,7 +61,7 @@ project/
 ├── offline_analysis_merge.py
 ├── pretest_analysis.py
 └── online_process.py
-
+```
 ---
 
 ## Requirements
