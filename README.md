@@ -21,21 +21,46 @@ The main objectives of this work were to:
 * Train and validate machine learning models capable of estimating fear-related states.
 * Integrate the trained classifier into a real-time neuroadaptive framework.
 * Dynamically modify the VR environment according to the participant's estimated emotional state.
+* Eventually, test the generalising performance of a cross-subject classifier.
 
 ---
 
-## Repository Structure
+Project Structure
 
-```text
-.
-├── offline_analysis/      # Signal preprocessing, feature extraction and model training
-├── online_analysis/       # Real-time processing and fear estimation
-├── unity/                 # Unity scripts for the neuroadaptive VR environment
-├── documentation/         # Additional documentation and resources
-├── figures/               # Images and pipeline diagrams
-├── requirements.txt
-└── README.md
-```
+The repository is organised to separate raw experimental data, source code, and documentation.
+
+project/
+│
+├── data/
+│   ├── offline/
+│   │   ├── P001.xdf
+│   │   ├── P001_questionnaires.txt
+│   │   ├── P002.xdf
+│   │   └── ...
+│   │
+│   └── online/
+│       ├── participant_001/
+│       │   ├── pretest.xdf
+│       │   ├── fear_classifier.pkl
+│       │   └── results_online_exp.txt
+│       └── ...
+│
+├── docs/
+│   ├── Consent_Form.pdf
+│   ├── Fear_of_Heights_Questionnaire.pdf
+│   ├── Igroup_Presence_Questionnaire.pdf
+│   ├── Participant_Information_Sheet_Offline.pdf
+│   ├── Participant_Information_Sheet_Online.pdf
+│   └── Virtual_Reality_Sickness_Questionnaire.pdf
+│
+├── src/
+│   └── xdf_to_mne_raw.py
+│
+├── offline_analysis.py
+├── offline_analysis_merge.py
+├── pretest_analysis.py
+└── online_process.py
+
 ---
 
 ## Requirements
@@ -84,20 +109,6 @@ The implemented pipeline consists of the following stages:
 
 ---
 
-## Technologies
-
-* Python
-* Unity (C#)
-* Lab Streaming Layer (LSL)
-* NumPy
-* SciPy
-* pandas
-* scikit-learn
-* MNE-Python
-* Matplotlib
-
----
-
 ## Data Availability
 
 The physiological recordings used in this project are **not publicly available** because they contain human participant data collected under ethical approval and informed consent.
@@ -110,7 +121,7 @@ The repository therefore contains only the software required to reproduce the pr
 
 **Michele Simoncelli**
 
-Master's Thesis in Biomedical Engineering
+Master's Thesis in Biengineering for Neuroscience
 
 University of Padova
 
