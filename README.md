@@ -124,6 +124,6 @@ The repository therefore contains only the software required to reproduce the pr
 
 Master's Thesis in Biengineering for Neuroscience
 
-University of Padova
+University of Padova - Technical University of Graz
 
 
