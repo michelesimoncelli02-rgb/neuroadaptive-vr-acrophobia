@@ -52,10 +52,16 @@ project/
 │   ├── Igroup_Presence_Questionnaire.pdf
 │   ├── Participant_Information_Sheet_Offline.pdf
 │   ├── Participant_Information_Sheet_Online.pdf
-│   └── Virtual_Reality_Sickness_Questionnaire.pdf
+│   ├── Virtual_Reality_Sickness_Questionnaire.pdf
+│   └── README.md
 │
 ├── src/
 │   └── xdf_to_mne_raw.py
+│
+├── Unity/
+│   ├── HeightVolume.cs
+│   ├── OnlinePlayerControl.cs
+│   └── PresetPlayerMovement.cs
 │
 ├── offline_analysis.py
 ├── offline_analysis_merge.py
@@ -73,6 +79,16 @@ Install the required dependencies with:
 ```bash
 pip install -r requirements.txt
 ```
+
+---
+
+## Instrumentation Used
+
+For EEG recording, the LiveAmp wireless amplifier (Brain Products GmbH, Gilching, Germany) was used, with 32 scalp electrodes mounted on a EasyCap EEG cap (easycap GmbH, Herrsching am Ammersee, Germany) according to the international 10–20 electrode placement system, with a sampling frequency of 250 Hz.
+
+ECG was recorded simultaneously using the LiveAmp Extension Box (Brain Products GmbH), an extension module integrated with the LiveAmp amplifier that enables the acquisition of additional physiological signals alongside EEG, and sampled at 250 Hz.
+
+The virtual environment was presented using an **HP Reverb G2 Omnicept Edition** head-mounted display (HMD) (HP Development Company, California, United States).
 
 ---
 
