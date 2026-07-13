@@ -25,7 +25,7 @@ The main objectives of this work were to:
 
 ---
 
-Project Structure
+## Project Structure
 
 The repository is organised to separate raw experimental data, source code, and documentation.
 
