@@ -59,7 +59,6 @@ project/
 │   └── xdf_to_mne_raw.py
 │
 ├── Unity/
-│   ├── HeightVolume.cs
 │   ├── OnlinePlayerControl.cs
 │   ├── PresetPlayerMovement.cs
 │   └── README.md
